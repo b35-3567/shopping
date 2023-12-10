@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="4dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FDD835"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/cart_img"
+            android:scaleType="centerInside"
+            android:src="@drawable/anhne"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cart_name"
+                android:fontFamily="monospace"
+                android:text="name"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/cart_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/cart_soluong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/cart_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@drawable/background_search"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="63dp"
+        android:src="@drawable/edittrue" />
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete" />
+</LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

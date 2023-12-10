@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.BottomNavigation">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#A8F4F2EF"
+        android:orientation="horizontal">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_margin="21dp"
+            android:layout_gravity="center"
+            android:src="@drawable/shopping_cart"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/voucher"/>
+
+    </LinearLayout>
+<FrameLayout
+    android:id="@+id/frameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:itemIconTint="#FFB300"
+        app:itemTextColor="#DD2C00"
+        app:labelVisibilityMode="selected"
+        app:menu="@menu/bottom_navigation"
+    />
+</LinearLayout>

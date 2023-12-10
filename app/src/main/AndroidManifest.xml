@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Shoping"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.YourFragmentActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ChangePassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Detail_Bill_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Detail_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.HistoryActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.VoucherActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value=" AIzaSyBUfbRpjXlRVOGAtX4tJ3uf8MxbuThrItk" />
+
+        <activity
+            android:name=".ShippingActivity"
+            android:exported="true"
+            android:label="@string/title_activity_shipping" />
+
+        <meta-data
+            android:name="com.google.android.gms.v3.ENABLE_DYNAMIC_API_REGISTRATION"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+            android:value="com.google.firebase.components.ComponentRegistrar" />
+
+        <activity
+            android:name=".MapActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.AcceptActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.YourMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ProductDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.DetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Bubble_tea_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ViewAllActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.BottomNavigation"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

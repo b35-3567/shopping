@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/house"
+        android:title="Home"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/shopping_bag"
+        android:title="giỏ hàng"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/delivery"
+        android:icon="@drawable/delivery"
+        android:title="Giao hàng"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/sale"
+        android:icon="@drawable/discount"
+        android:title="Sale"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/admin"
+        android:icon="@drawable/user"
+        android:title="user"
+        app:showAsAction="always"/>
+</menu>

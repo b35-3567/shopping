@@ -1,0 +1,21 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Sản phẩm 1",
+      "price": 10.99,
+      "quantity": 100,
+      "size": "M",
+      "imageUrl": "D:\\duanmau\\duan1_shopping\\app\\src\\main\\res\\drawable\\shippertrue.png"
+    },
+    {
+      "id": "2",
+      "name": "Sản phẩm 2",
+      "price": 19.99,
+      "quantity": 50,
+      "size": "L",
+      "imageUrl": "D:\\duanmau\\duan1_shopping\\app\\src\\main\\res\\drawable\\twitter.png"
+    }
+
+  ]
+}

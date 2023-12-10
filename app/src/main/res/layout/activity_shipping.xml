@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:id="@+id/myFrameLayout"
+    tools:context=".ShippingActivity"
+    android:layout_width="match_parent">
+    <androidx.cardview.widget.CardView
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        map:cardElevation="8dp"
+        map:cardCornerRadius="4dp"
+        android:layout_margin="16dp">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:weightSum="10"
+               android:orientation="horizontal">
+               <ImageView
+                   android:id="@+id/image_food"
+                   android:layout_width="0dp"
+                   android:layout_weight="3"
+                   android:scaleType="fitXY"
+                   android:layout_height="match_parent"/>
+               <LinearLayout
+                   android:layout_margin="8dp"
+                   android:layout_width="0dp"
+                   android:layout_weight="7"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+<TextView
+    android:id="@+id/txt_date"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Date"
+    android:fontFamily="sans-serif-medium"
+    android:textStyle="italic"
+    android:textSize="16sp"/>
+                   <TextView
+                       android:id="@+id/txt_order_number"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="abcdef"
+                       android:textColor="#039BE5"
+                       android:fontFamily="sans-serif-medium"
+                       android:textStyle="italic"
+                       android:textSize="16sp"/>
+                   <TextView
+                       android:id="@+id/txt_name"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Name: David"
+                       android:fontFamily="sans-serif-medium"
+                       android:textStyle="italic"
+                       android:textSize="16sp"/>
+                   <TextView
+                       android:id="@+id/txt_address"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text=" Tân Chánh Hiệp, Quận 12, Thành phố Hồ Chí Minh, Việt Nam"
+                       android:fontFamily="sans-serif-medium"
+                       android:textStyle="italic"
+                       android:textSize="16sp"/>
+               </LinearLayout>
+           </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStartTrip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Start trip"
+                android:textSize="12sp"
+                android:background="#E53935"
+                android:backgroundTint="#E53935"
+                android:layout_weight="1"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="call"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                map:icon="@drawable/baseline_phone_enabled_24"
+                android:textSize="12sp"
+                android:background="#E53935"
+                android:backgroundTint="#E53935"
+                android:layout_weight="1"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Done"
+                android:textSize="12sp"
+                android:background="#E53935"
+                android:backgroundTint="#E53935"
+                android:layout_weight="1"/>
+        </LinearLayout>
+       </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ShippingActivity" />
+</FrameLayout>
+

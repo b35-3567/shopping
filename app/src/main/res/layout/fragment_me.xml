@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.Fragment_me">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="#BAB7B7">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiện Ích"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_lichsu"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/history"
+                android:text="Lịch sử đơn hàng"
+                android:layout_margin="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:background="@drawable/background_me"
+                app:backgroundTint="@color/white"/>
+            <Button
+                android:id="@+id/btn_dieukhoan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/badge"
+                android:text="Điều khoản dịch vụ"
+                android:layout_margin="10dp"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:background="@drawable/background_me"
+                app:backgroundTint="@color/white"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hỗ Trợ"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/btn_gioithieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/warning"
+            android:text="Giới Thiệu"
+            android:background="@drawable/background_me"
+            app:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/btn_gopy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/background_me"
+            app:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/telephone"
+            android:text="Góp Ý"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tài Khoản"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/btn_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Thông Tin Cá Nhân"
+            android:background="@drawable/background_me"
+            app:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/admintrue"/>
+        <Button
+            android:id="@+id/btn_doimk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Đổi Mật Khẩu"
+            android:background="@drawable/background_me"
+            app:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/padlock"/>
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Log Out"
+            android:background="@drawable/background_me"
+            app:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/exit"/>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>

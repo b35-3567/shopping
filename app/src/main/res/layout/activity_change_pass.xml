@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:gravity="center"
+    tools:context=".activity.ChangePassActivity">
+    <ImageView
+        android:id="@+id/reg_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_bee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+<EditText
+    android:id="@+id/oldPasswordEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/ic_security_24"
+    android:padding="13dp"
+    android:elevation="3dp"
+   android:hint="nhập mạt khẩu cũ"
+    android:textSize="18dp"
+    android:background="@drawable/editext_background"/>
+    <EditText
+        android:id="@+id/newPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:drawableLeft="@drawable/ic_security_24"
+        android:padding="13dp"
+        android:elevation="3dp"
+        android:hint="nhập mạt khẩu mới "
+        android:textSize="19dp"
+        android:background="@drawable/editext_background"/>
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:drawableLeft="@drawable/ic_security_24"
+        android:padding="13dp"
+        android:elevation="3dp"
+        android:hint="nhập lại mạt khẩu  "
+        android:textSize="18dp"
+        android:background="@drawable/editext_background"/>
+    <Button
+        android:layout_marginTop="12dp"
+        android:id="@+id/changePasswordButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#FB8C00"
+        android:textAllCaps="true"
+        android:background="@drawable/editext_background"
+        android:text="thay đổi mật khẩu"/>
+
+</LinearLayout>
