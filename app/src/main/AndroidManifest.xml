@@ -19,13 +19,7 @@
         tools:targetApi="31">
         <activity
             android:name=".activity.YourFragmentActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".activity.ChangePassActivity"
             android:exported="false" />
@@ -37,13 +31,7 @@
             android:exported="true" />
         <activity
             android:name=".activity.HistoryActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".activity.VoucherActivity"
             android:exported="true" />
