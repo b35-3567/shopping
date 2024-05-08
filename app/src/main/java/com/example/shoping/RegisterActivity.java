@@ -91,22 +91,32 @@ Button signUp;
             return;
         }
         //create user
-         auth.createUserWithEmailAndPassword(email,pass)
+        auth.createUserWithEmailAndPassword(email, pass)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            User user=new User(username,email,phone,pass,location);
-                            String id=task.getResult().getUser().getUid();
-                            database.getReference().child("Users").child(id).setValue(user);
+                        if (task.isSuccessful()) {
+                            // Người dùng được tạo thành công
+
+                            if (auth != null) {
+                                String uid = auth.getUid(); // Lấy UID của người dùng mới
+                                // Lưu thông tin người dùng vào Firebase Realtime Database
+                                User user = new User(username, email, phone, pass, location);
+                                database.getReference().child("Users").child(uid).setValue(user);
+                                // Hiển thị thông báo đăng ký thành công hoặc điều chỉnh giao diện của bạn ở đây
+                                progressBar.setVisibility(View.GONE);
+                                Toast.makeText(RegisterActivity.this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
+                            } else {
+                                // FirebaseUser is null, xử lý lỗi ở đây nếu cần
+                            }
+                        } else {
+                            // Đăng ký thất bại, xử lý lỗi ở đây nếu cần
                             progressBar.setVisibility(View.GONE);
-                            Toast.makeText(RegisterActivity.this, "đăng ký thành công", Toast.LENGTH_SHORT).show();
-                        }else {
-                            progressBar.setVisibility(View.GONE);
-                            Toast.makeText(RegisterActivity.this, "đăng ký thất bại", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity.this, "Đăng ký thất bại", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
+
 
     }
 
